@@ -1,9 +1,16 @@
+import Tabs.ManageMembersTab;
+import Tabs.StatisticsTab;
 import javafx.animation.FadeTransition;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.TabPane;
+import javafx.scene.control.TabPane.TabClosingPolicy;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -26,6 +33,7 @@ public class Main extends Application {
 	//global declarations
 	private Pane splashLayout;
 	private Stage mainStage;
+	TabPane tabPane;
 	private static final int SPLASH_WIDTH = 676;
 	private static final int SPLASH_HEIGHT = 227;
 	
@@ -69,10 +77,48 @@ public class Main extends Application {
 	    mainStage = new Stage(StageStyle.DECORATED);
 	    mainStage.setTitle("MGL Club");
 	    mainStage.setIconified(false);
-
-	    // layout the scene.
-	    BorderPane root = new BorderPane();
-	    Scene scene = new Scene(root, 1000, 600);
+	    
+	    //Build a menu bar
+		MenuBar menu = new MenuBar();
+		Menu fileMenu = new Menu("File");
+		Menu credits = new Menu("Credits");
+		
+  		//Build all menu items
+  		MenuItem exit = new MenuItem("Exit");
+  		exit.setOnAction(e->{
+//	  			Database db = Database.getInstance();
+//	  			db.close();
+  			System.exit(0);
+  		});
+  		
+  		fileMenu.getItems().add(exit);
+  		//Add the menu items to the menu bar
+  		menu.getMenus().addAll(fileMenu, credits);
+  		
+  		//Create a TabPane
+  		tabPane = new TabPane();
+  		tabPane.setTabClosingPolicy(TabClosingPolicy.UNAVAILABLE);
+  		
+  		//Create the tabs
+  		ManageMembersTab manageMembersTab = ManageMembersTab.getInstance();
+  		manageMembersTab.setClosable(false);
+  		
+  		StatisticsTab statisticsTab = StatisticsTab.getInstance();
+  		statisticsTab.setClosable(false);
+  		
+  		//Add the tabs to the TabPane
+  		tabPane.getTabs().addAll(manageMembersTab, statisticsTab);
+  		
+  		//Create a BorderPane
+  		BorderPane pane = new BorderPane();
+  		//set the top of the BorderPane to the MenuBar
+  		pane.setTop(menu);
+  		//Set the center of the BorderPane to the TabPane
+  		pane.setCenter(tabPane);
+  		//Create the scene
+  		Scene scene = new Scene(pane, 1024, 768);
+  		//Add the scene to the stage
+  		
 	    mainStage.setScene(scene);
 	    mainStage.show();
 	  }
