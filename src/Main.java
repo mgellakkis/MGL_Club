@@ -1,3 +1,4 @@
+import Database.Database;
 import Tabs.ManageMembersTab;
 import Tabs.StatisticsTab;
 import javafx.animation.FadeTransition;
@@ -86,8 +87,8 @@ public class Main extends Application {
   		//Build all menu items
   		MenuItem exit = new MenuItem("Exit");
   		exit.setOnAction(e->{
-//	  			Database db = Database.getInstance();
-//	  			db.close();
+//  			Database db = Database.getInstance();
+//  			db.close();
   			System.exit(0);
   		});
   		
