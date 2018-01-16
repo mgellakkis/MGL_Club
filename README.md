@@ -29,3 +29,8 @@
 -	Your GitHub repo must be private (Ask me for help before you create it) 
 -	You can register for a free educational account to create your project here: https://education.github.com/ 
 -	You must invite me as a collaborator to your project (cfiliault) 
+
+#concept:
+![conceptImage](http://url/to/img.png)
+#Final product:
+![actualProductImage](http://url/to/img.png)
