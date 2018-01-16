@@ -30,7 +30,8 @@
 -	You can register for a free educational account to create your project here: https://education.github.com/ 
 -	You must invite me as a collaborator to your project (cfiliault) 
 
-#concept:
+# concept:
 ![conceptImage](http://url/to/img.png)
-#Final product:
+
+# Final product:
 ![actualProductImage](http://url/to/img.png)
