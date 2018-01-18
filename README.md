@@ -38,5 +38,5 @@
 ![actualProductImage](https://github.com/mgellakkis/MGL_Club/blob/master/Screen%20Shot%202018-01-16%20at%2010.46.40%20AM.png)
 
 ## Statistics Tab
-![actualProductImage](https://github.com/mgellakkis/MGL_Club/blob/master/Screen%20Shot%202018-01-16%20at%2010.46.40%20AM.png)
+![actualProductImage](https://github.com/mgellakkis/MGL_Club/blob/master/Screen%20Shot%202018-01-16%20at%2010.46.57%20AM.png)
 
