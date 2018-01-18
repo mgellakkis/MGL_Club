@@ -31,7 +31,7 @@
 -	You must invite me as a collaborator to your project (cfiliault) 
 
 # concept:
-![conceptImage](https://github.com/mgellakkis/MGL_Club/blob/master/Screen%20Shot%202018-01-16%20at%2010.46.40%20AM.png)
+![conceptImage](https://github.com/mgellakkis/MGL_Club/blob/master/Screen%20Shot%202018-01-16%20at%2011.00.30%20AM.png)
 
 # Final product:
 ## Members Management Tab
