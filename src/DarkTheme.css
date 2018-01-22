@@ -1,0 +1,17 @@
+.background {
+    -fx-background-color: #1d1d1d;
+}
+
+.label {
+    -fx-font-size: 13pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: Blue;
+    -fx-opacity: 0.6;
+}
+
+.label-bright {
+    -fx-font-size: 13pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: Yellow;
+    -fx-opacity: 1;
+}
