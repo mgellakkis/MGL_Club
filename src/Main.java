@@ -35,7 +35,7 @@ public class Main extends Application {
 
 	}
 
-	//global declarations
+	//global declarations...
 	private Pane splashLayout;
 	private Stage mainStage;
 	TabPane tabPane;
